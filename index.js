@@ -72,7 +72,7 @@ async function EmailRandomQuestion(){
     request(options, callback);
 }
 
-// This funtion calls createCscFile and parses date into it  
+// This funtion calls createCsvFile and parses data into it  
 async function scrapeData() {
     const Questions = await scrapeQuestions();
     await createCsvFile(Questions);
